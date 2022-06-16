@@ -1,1 +1,26 @@
-body{max-width:1000px;padding:1em;font-family:Helvetica,Arial,sans-serif;}div,section,main,aside,header,footer{border:1px solid lightgray;padding:.5em;margin-bottom:1em;}
+
+body{
+    background-color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 20px 40px;
+    background-color: cadetblue;
+}
+
+.navigation{
+display: flex; 
+flex-direction: row-reverse;
+justify-content: flex-end; 
+position: relative;
+
+}
+
+.portfolio{
+    display: flex; 
+flex-direction: row-reverse;
+justify-content: flex-end; 
+position: relative;
+
+}
