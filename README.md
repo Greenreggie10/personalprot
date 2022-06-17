@@ -5,6 +5,7 @@
 /*HTML & CSS */
 
 <!-- URL to hosted site -->
+https://greenreggie10.github.io/personalprot/
 
 
 <!-- picture of site -->
@@ -22,3 +23,8 @@ Linkdin www.linkedin.com/in/reginald-green-92ba43239
 "added README,index,assets"
 "edit README"
 "corrected picture"
+"detailed sections"
+"add latest work urls"
+"final push"
+
+

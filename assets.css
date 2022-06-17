@@ -1,4 +1,9 @@
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
 body{
     background-color: burlywood;
     font-family: Arial, Helvetica, sans-serif;
@@ -9,18 +14,187 @@ header {
     background-color: cadetblue;
 }
 
-.navigation{
-display: flex; 
-flex-direction: row-reverse;
-justify-content: flex-end; 
-position: relative;
+.navigation {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; 
+}
+.navigation:hover {
+    background-color: darkgray;
+}
+
+
+.portPicture {
+    width: 350px;
+    margin-bottom: 5px;
+    justify-content: flex-start;
+    border: 2px solid rgb(0, 0, 0);
+
+  }
+
+/* .aboutme {
+    width: 75vw;
+    position: relative ;
+    text-align: center;
+    margin-bottom: 5px;
+    
+} */
+
+/* .portfolioo{
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-end; 
+    position: relative;
+    top: 40px; left: 0px;
+    height: inherit;
+    width: 200px;
+    margin-bottom: 5px;
+    border: 2px solid rgb(0, 0, 0);
+} */
+
+.page-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.section-heading {
+    border-right: 4px solid #000;
+    padding-right: 10px;
+    flex-basis: 20%;
+    text-align: end;
+}
+
+.wrapper {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.introduction {
+    text-align: center;
+    flex-basis: 70%;
+}
+
+.portfolio {
+    display: flex;
+    flex-basis: 75%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+
+
+#div-1 {
+    color: darkgrey;
+    background-image: url(F4C07277-688B-4119-BC8C-60C8935DA5CF.jpeg);
+    height: 300px;
+    background-size: cover;
 
 }
 
-.portfolio{
-    display: flex; 
-flex-direction: row-reverse;
-justify-content: flex-end; 
-position: relative;
+#div-1:hover {
+    cursor: url("F4C07277-688B-4119-BC8C-60C8935DA5CF.jpeg") ;
+}
 
+
+#div-2 {
+    background-image: url("refactoooo.png");
+    height: 300px;
+    background-size: cover;
+    
+}
+
+#div-2.hover {
+    cursor: url("refactoooo.png") ;
+}
+
+
+
+#div-3 {
+    background-image: url("runbudrun.png");
+    height: 300px;
+    background-size: cover;
+}
+
+#div-3:hover {
+    cursor: url("runbudrun.png");
+    color: darkgrey;
+}
+
+
+.project {
+    margin-bottom: 6%;
+}
+
+.big-project {
+    flex-basis: 100%;
+}
+
+.small-project {
+    flex-basis: calc(50% - 1em);
+
+}
+
+
+.contact {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around; 
+    text-size-adjust: auto; ;
+}
+
+#resume {
+     display: flex ;
+     text align-self: center;
+     flex-basis: 70%;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+    
+}
+
+
+
+
+
+@media screen and (max-width: 980px) {
+
+    .section-heading {
+        border-right: 4px solid #000;
+        padding-right: 10px;
+        flex-basis: 20%;
+        text-align: end;
+    }
+    .page-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+        flex-wrap: nowrap;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) { 
+    .section-heading {
+        border-right: 4px solid #000;
+        padding-right: 10px;
+        flex-basis: 100%;
+        text-align: end;
+    }
+    .page-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
 }
